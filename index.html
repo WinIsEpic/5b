@@ -10,8 +10,18 @@
 <body>
 
 <div id="center">
-	<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-	<embed src="https://winisepic.github.io/5b/c.swf?path=5b.swf" width="960" height="540"></embed>
+	<script>
+    window.RufflePlayer = window.RufflePlayer || {};
+
+    window.addEventListener("DOMContentLoaded", () => {
+        let ruffle = window.RufflePlayer.newest();
+        let player = ruffle.createPlayer();
+        let container = document.getElementById("container");
+        container.appendChild(player);
+        player.load("c.swf?path=5b.swf");
+    });
+</script>
+<script src="/ruffle-selfhosted/ruffle.js/"></script>
 <p> 
 	This game (Remake by WinIsEpic) is part of <a href="http://battlefordreamisland.com">Battle for Dream Island</a>.<br />
 	<a href="http://htwins.net">HTwins.net</a>
