@@ -8,36 +8,34 @@
 	<link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
-
-	<div id="center"style="width:960x;height:540px;border:solid 0px #000;padding:10px"></div>
-	<script>
-    window.RufflePlayer = window.RufflePlayer || {};
-
+<div id="center"></div>
+      <script>
+      window.RufflePlayer = window.RufflePlayer || {};
+      window.RufflePlayer.config = {
+      base: "https://winisepic.github.io/5b/",
+      letterbox: "on",
+}
     window.addEventListener("DOMContentLoaded", () => {
-        let ruffle = window.RufflePlayer.newest();
+        let ruffle = window.RufflePlayer.newest(); 
         let player = ruffle.createPlayer();
         let container = document.getElementById("center");
         container.appendChild(player);
-        player.load("c.swf?path=5b.swf");
+        player.load("https://winisepic.github.io/5b/c.swf?path=5b.swf" ); 
+	player.style.width = "100vw"; player.style.height = "100vh";
     });
 </script>
-<script src="5b/ruffle-selfhosted/ruffle.js/"></script>
+<script src="https://unpkg.com/@ruffle-rs/ruffle.js"></script>
+</script>
+    <style>
+      * {
+        margin: 0;
+        overflow: hidden;
+      	}
+</style>
 <p> 
 	This game (Remake by WinIsEpic) is part of <a href="http://battlefordreamisland.com">Battle for Dream Island</a>.<br />
 	<a href="http://htwins.net">HTwins.net</a>
 </p>
-
-<script type="text/javascript"><!--
-google_ad_client = "ca-pub-8441223715044524";
-/* Battle for Dream Island games */
-google_ad_slot = "3633530917";
-google_ad_width = 728;
-google_ad_height = 90;
-//-->
-</script>
-<script type="text/javascript"
-src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script>
 
 </div>
 </body>
