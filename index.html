@@ -9,14 +9,14 @@
 </head>
 <body>
 
-	<div id="container"></div>
+	<div id="center">
 	<script>
     window.RufflePlayer = window.RufflePlayer || {};
 
     window.addEventListener("DOMContentLoaded", () => {
         let ruffle = window.RufflePlayer.newest();
         let player = ruffle.createPlayer();
-        let container = document.getElementById("container");
+        let container = document.getElementById("center");
         container.appendChild(player);
         player.load("c.swf?path=5b.swf");
     });
