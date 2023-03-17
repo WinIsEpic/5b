@@ -12,7 +12,14 @@
 
 <div id="center">
 	<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-	<object type="application/x-shockwave-flash" data="http://battlefordreamisland.com/5b/c.swf?path=5b.swf" width="960" height="540">
+	window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+    "autoplay": "on",
+    "unmuteOverlay": "hidden",
+    "backgroundColor": null,
+    "splashScreen": false,
+};
+	<object type="application/x-shockwave-flash" data="http://winisepic.github.io/5b/c.swf?path=5b.swf" width="960" height="540">
 		<param name="movie" value="http://winisepic.github.io/5b/c.swf?path=5b.swf" />
 		<param name="base" value="http://winisepic.github.io/5b" />
 		You need a more recent version of <a href="http://get.adobe.com/flashplayer/">Adobe Flash Player</a>.
