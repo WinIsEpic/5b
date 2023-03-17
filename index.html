@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -8,31 +9,20 @@
 	<link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
-<div id="container">
-      <script>
-      window.RufflePlayer = window.RufflePlayer || {};
-      window.RufflePlayer.config = {
-      base: "https://winisepic.github.io/5b/",
-      autoplay: "auto",
-      quality: "medium",
-}
-    window.addEventListener("DOMContentLoaded", () => {
-        let ruffle = window.RufflePlayer.newest(); 
-        let player = ruffle.createPlayer();
-        let container = document.getElementById("container");
-        container.appendChild(player);
-        player.load("https://winisepic.github.io/5b/c.swf?path=5b.swf" ); 
-	player.style.width = "960px"; player.style.height = "540px";
-    });
-</script>
-<script src="https://unpkg.com/@ruffle-rs/ruffle.js"></script>
-</div>
 
-</p>
-	This game (Remake by WinIsEpic) is part of <a href="http://battlefordreamisland.com">Battle for Dream Island</a>.<br />
-	<a href="http://htwins.net">HTwins.net</a>
+<div id="center">
+	<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+	<object type="application/x-shockwave-flash" data="http://battlefordreamisland.com/5b/c.swf?path=5b.swf" width="960" height="540">
+		<param name="movie" value="http://battlefordreamisland.com/5b/c.swf?path=5b.swf" />
+		<param name="base" value="http://battlefordreamisland.com/5b/5b" />
+		You need a more recent version of <a href="http://get.adobe.com/flashplayer/">Adobe Flash Player</a>.
+	</object>
 <p>
+	This game is part of <a href="http://battlefordreamisland.com">Battle for Dream Island</a>.<br />
+	<a href="http://htwins.net">HTwins.net</a>
+</p>
 
 
-
-
+</div>
+</body>
+</html>
