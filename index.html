@@ -11,10 +11,18 @@
 <body>
 
 <div id="container">
-	<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-	<object type="application/x-shockwave-flash" data="http://winisepic.github.io/5b/c.swf?path=5b.swf" width="960" height="540">
-	<param name="movie" value="http://winisepic.github.io/5b/c.swf?path=5b.swf" />
-	<param name="base" value="http://winisepic.github.io/5b" />
+<script>
+    window.RufflePlayer = window.RufflePlayer || {};
+    window.addEventListener("load", (event) => {
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+        const container = document.getElementById("container");
+        container.appendChild(player);
+        player.load("http://winisepic.github.io/5b/c.swf?path=5b.swf");
+    });
+</script>
+<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+	
 <p>
 	This game is part of <a href="http://battlefordreamisland.com">Battle for Dream Island</a>.<br />
 	<a href="http://htwins.net">HTwins.net</a>
