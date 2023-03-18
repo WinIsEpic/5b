@@ -33,7 +33,7 @@ body{
 p{
 	margin:0 0 0.7em;
 }
-#center{
+#container{
 	position:absolute;
 	top:40%;
 	margin-top:-255px;
