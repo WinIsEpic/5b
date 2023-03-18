@@ -38,3 +38,7 @@ p{
 	top:40%;
 	margin-top:-255px;
 }
+ruffle-object, ruffle-embed {
+        width: 960px;
+        height: 540px;
+}
